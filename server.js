@@ -37,6 +37,6 @@ app.get('/api/:illnessName', (request, response) => {
 })
 
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
   console.log(`The server is running on port ${PORT})! You better go catch it!`)
 })
